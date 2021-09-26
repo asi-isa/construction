@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1rem;
+}
+
+.ham {
+  position: relative;
+  width: 1.2rem;
+  height: 0.6rem;
+  margin-right: 0.4rem;
+}
+.ham::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--accent-color);
+  border-radius: 2rem;
+  transform: translateX(50%);
+  transition: transform 450ms ease-in-out;
+}
+.ham::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: black;
+  border-radius: 2rem;
+  transition: transform 450ms ease-in-out;
+}
+.active.ham::before {
+  transform: translateX(0);
+}
+.active.ham::after {
+  transform: translateX(50%);
+}
