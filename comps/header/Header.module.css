@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.4rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .ham {
@@ -54,6 +55,8 @@
   padding: 1rem;
   padding-top: 2rem;
   transition: opacity 450ms ease-in-out;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
 }
 .nav::before {
   content: "a.s.i.";
