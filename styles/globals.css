@@ -3,7 +3,12 @@
   --accent-color-50: rgba(222, 120, 51, 0.5);
   --accent-color-30: rgba(222, 120, 51, 0.3);
   --white: rgb(255, 255, 255);
+  --white-90: rgb(255, 255, 255, 0.9);
+  --white-50: rgb(255, 255, 255, 0.5);
   --white-30: rgba(255, 255, 255, 0.3);
+  --black: rgb(0, 0, 0);
+  --black-80: rgb(0, 0, 0, 0.8);
+  --black-50: rgb(0, 0, 0, 0.5);
 }
 
 * {
@@ -36,4 +41,7 @@ img {
 }
 .transparent {
   opacity: 0;
+}
+.scale12 {
+  transform: scale(1.2);
 }
