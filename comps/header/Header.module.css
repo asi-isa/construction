@@ -40,3 +40,55 @@
 .active.ham::after {
   transform: translateX(50%);
 }
+
+.nav {
+  position: absolute;
+  top: 7vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 2px solid var(--accent-color-30);
+  border-radius: 0.5rem;
+  width: 90vw;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 2rem;
+  transition: opacity 450ms ease-in-out;
+}
+.nav::before {
+  content: "a.s.i.";
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+/* .li::after {
+  position: absolute;
+  content: "";
+  transition: all 450ms ease-in-out;
+} */
+.li:hover::after,
+.li:focus::after,
+.li:active::after {
+  position: absolute;
+  content: "";
+  bottom: -0.5rem;
+  left: 25vw;
+  right: 25vw;
+  height: 2px;
+  background-color: var(--accent-color-50);
+}

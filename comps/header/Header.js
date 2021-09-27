@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 export default function Header() {
   const [showHamMenu, setShowHamMenu] = useState(false);
@@ -13,14 +14,14 @@ export default function Header() {
         className={`${styles.ham} ${showHamMenu && styles.active}`}
         onClick={toggleHamMenu}
       ></div>
-      {/* <nav className={`${styles.nav} ${!showHamMenu && "none"}`}>
+      <nav className={`${styles.nav} ${!showHamMenu && "transparent"}`}>
         <ul className={styles.ul}>
           <li className={styles.li}>meine arbeit</li>
           <li className={styles.li}>über mich</li>
           <li className={styles.li}>kontakt</li>
           <li className={styles.li}>jobs</li>
         </ul>
-      </nav> */}
+      </nav>
     </header>
   );
 }

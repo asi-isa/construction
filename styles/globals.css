@@ -32,3 +32,6 @@ li {
 .none {
   display: none;
 }
+.transparent {
+  opacity: 0;
+}
