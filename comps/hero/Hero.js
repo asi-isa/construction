@@ -15,9 +15,12 @@ export default function Hero() {
     <section className={styles.hero}>
       <Image src={heroBG} layout="responsive" width={1920} height={1536} />
       <article className={`${styles.info} ${!visible && "transparent"}`}>
-        <Link href="/">
+        {/* <Link href="/">
           <a className={styles.info_link}>leistungen</a>
-        </Link>
+        </Link> */}
+        <div className={styles.hero_info}>
+          <p className={styles.hero_info_text}>machen was hält.</p>
+        </div>
         <Link href="/">
           <a className={styles.info_link}>kontakt</a>
         </Link>

@@ -1,3 +1,8 @@
+.header {
+  margin: 3rem 0;
+  text-align: center;
+}
+
 .mywork_con {
   display: flex;
   flex-direction: column;
