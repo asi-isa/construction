@@ -33,13 +33,13 @@ export default function MyWork() {
           img={mywork3}
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste
         architecto!"
-          title="metall"
+          title="konstruktion"
         />
         <MyWorkCard
           img={mywork4}
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste
         architecto!"
-          title="metall"
+          title="modern bauen"
         />
       </div>
     </section>
