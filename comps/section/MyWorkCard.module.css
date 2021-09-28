@@ -1,0 +1,41 @@
+.mywork_item {
+  height: 50vh;
+  max-width: 94vw;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.img {
+  position: absolute;
+  z-index: -1;
+}
+
+.info {
+  padding: 1rem;
+  background-color: var(--black-80);
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition: opacity 450ms ease-in-out;
+}
+
+.btn {
+  background-color: var(--black-80);
+  color: white;
+  font-size: 1.3rem;
+  padding: 0 1.2rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn svg {
+  margin-left: auto;
+}

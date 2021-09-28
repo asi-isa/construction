@@ -1,28 +1,5 @@
 .mywork_con {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mywork_item {
-  padding: 4rem;
-  max-width: 90vw;
-  overflow: hidden;
-  position: relative;
-  border-radius: 0.5rem;
-  display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-}
-
-.img {
-  position: absolute;
-  z-index: -1;
-}
-
-.info {
-  padding: 1rem;
-  background-color: var(--black-80);
-  color: white;
-  border-radius: 0.5rem;
+  align-items: center;
 }

@@ -16,7 +16,7 @@ export default function Hero() {
       <Image src={heroBG} layout="responsive" width={1920} height={1536} />
       <article className={`${styles.info} ${!visible && "transparent"}`}>
         <Link href="/">
-          <a className={styles.info_link}>meine arbeit</a>
+          <a className={styles.info_link}>leistungen</a>
         </Link>
         <Link href="/">
           <a className={styles.info_link}>kontakt</a>

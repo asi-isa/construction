@@ -16,7 +16,7 @@ export default function Header() {
       ></div>
       <nav className={`${styles.nav} ${!showHamMenu && "transparent"}`}>
         <ul className={styles.ul}>
-          <li className={styles.li}>meine arbeit</li>
+          <li className={styles.li}>leistungen</li>
           <li className={styles.li}>über mich</li>
           <li className={styles.li}>kontakt</li>
           <li className={styles.li}>jobs</li>

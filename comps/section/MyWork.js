@@ -1,12 +1,8 @@
 import styles from "./MyWork.module.css";
-import Image from "next/image";
-import { useState } from "react";
+import MyWorkCard from "./MyWorkCard";
+import modernWoodHouse from "../../public/images/mywork1.jpg";
 
 export default function MyWork() {
-  const [highlight, setHighlight] = useState(false);
-  function toggleHighlight() {
-    setHighlight(!highlight);
-  }
   return (
     <section className={styles.mywork} id="mywork">
       <div className={styles.header}>
@@ -17,19 +13,19 @@ export default function MyWork() {
       </div>
 
       <div className={styles.mywork_con}>
-        <article className={`${styles.mywork_item} `} onClick={toggleHighlight}>
-          <Image
-            src="/images/mywork1.jpg"
-            layout="fill"
-            objectFit="cover"
-            className={styles.img}
-          />
-          <div className={`${styles.info} ${!highlight && "transparent"}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste
-            architecto perferendis sit illum odio modi ipsam itaque? Maiores,
-            et. Obcaecati!
-          </div>
-        </article>
+        <MyWorkCard
+          img={modernWoodHouse}
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste
+        architecto perferendis sit illum odio modi ipsam itaque? Maiores, et.
+        Obcaecati!"
+          title="holz"
+        />
+        <MyWorkCard
+          img={modernWoodHouse}
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste
+        architecto!"
+          title="holz"
+        />
       </div>
     </section>
   );

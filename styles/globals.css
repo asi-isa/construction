@@ -34,6 +34,9 @@ li {
 img {
   max-width: 100%;
 }
+svg {
+  transform: scale(1.6);
+}
 
 /* utils */
 .none {
