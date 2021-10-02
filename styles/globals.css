@@ -39,8 +39,10 @@ svg {
 }
 
 /* utils */
-.none {
-  display: none;
+@media (min-width: 770px) {
+  .none {
+    display: none;
+  }
 }
 .transparent {
   opacity: 0;

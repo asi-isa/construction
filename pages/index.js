@@ -5,6 +5,7 @@ import Hero from "../comps/hero/Hero";
 import MyWork from "../comps/section/MyWork";
 import Footer from "../comps/footer/Footer";
 import FooterHero from "../comps/footer/FooterHero";
+import AboutUs from "../comps/section/AboutUs";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <Hero />
 
       <MyWork />
+
+      <AboutUs />
 
       <FooterHero />
 

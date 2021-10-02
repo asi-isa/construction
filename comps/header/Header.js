@@ -23,9 +23,9 @@ export default function Header() {
                 <a className={styles.link}>Leistungen</a>
               </Link>
             </li>
-            <li className={styles.li}>über mich</li>
-            <li className={styles.li}>kontakt</li>
-            <li className={styles.li}>jobs</li>
+            <li className={styles.li}>Über Uns</li>
+            <li className={styles.li}>Kontakt</li>
+            <li className={styles.li}>Jobs</li>
           </ul>
         </nav>
       </header>
