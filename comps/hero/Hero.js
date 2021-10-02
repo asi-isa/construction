@@ -5,6 +5,7 @@ import heroBG from "../../public/images/haus_landschaft.jpg";
 import { useEffect, useState } from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
+import Popup from "../popup/Popup";
 
 export default function Hero() {
   const [visible, setVisible] = useState(false);
@@ -13,6 +14,11 @@ export default function Hero() {
       setVisible(true);
     }, 0);
   }, []);
+
+  const [showPopup, setShowPopup] = useState(false);
+  function togglePopup() {
+    setShowPopup(!showPopup);
+  }
   return (
     <section className={styles.hero}>
       <Image src={heroBG} layout="responsive" width={1920} height={1536} />
@@ -32,11 +38,20 @@ export default function Hero() {
               <HiOutlineMail />
             </a>
           </Link>
-          <div className={styles.info_link}>
+          <div className={styles.info_link} onClick={togglePopup}>
             <AiOutlinePhone />
           </div>
         </div>
       </article>
+
+      {showPopup && (
+        <Popup
+          title="Unsere Rufnummern"
+          text="06008 424242"
+          text2="+49 0154 424242"
+          closePopup={togglePopup}
+        />
+      )}
     </section>
   );
 }

@@ -1,0 +1,31 @@
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--white-90);
+}
+.modal {
+  position: absolute;
+  inset: 0;
+  background-color: var(--black-50);
+}
+
+.header {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.closeBTN {
+  transform: scale(3.3);
+  margin-left: 2rem;
+}
+.text,
+.text2 {
+  font-size: 1.1rem;
+}
+.text {
+  margin-bottom: 1rem;
+}
