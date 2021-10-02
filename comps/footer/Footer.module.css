@@ -1,0 +1,17 @@
+.footer {
+  padding: 2rem 1rem;
+  background-color: black;
+  color: white;
+  /* border-top-left-radius: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.isatech {
+  font-weight: bold;
+  text-decoration: underline;
+}

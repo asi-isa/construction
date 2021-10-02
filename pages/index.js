@@ -3,6 +3,8 @@ import styles from "../styles/Home.module.css";
 import Header from "../comps/header/Header";
 import Hero from "../comps/hero/Hero";
 import MyWork from "../comps/section/MyWork";
+import Footer from "../comps/footer/Footer";
+import FooterHero from "../comps/footer/FooterHero";
 
 export default function Home() {
   return (
@@ -18,6 +20,10 @@ export default function Home() {
       <Hero />
 
       <MyWork />
+
+      <FooterHero />
+
+      <Footer />
 
       {/* <main className={styles.main}>
         <h1 className={styles.title}>

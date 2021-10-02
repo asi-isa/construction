@@ -9,7 +9,7 @@ export default function MyWork() {
   return (
     <section className={styles.mywork} id="mywork">
       <div className={styles.header}>
-        <h5 className={styles.subheading}>meine lesitungen</h5>
+        <h5 className={styles.subheading}>Unsere Leistungen</h5>
         <h2 className={styles.heading}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         </h2>
