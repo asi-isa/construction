@@ -12,7 +12,7 @@ export default function Footer() {
           </a>
         </p>
         <Link href="/">
-          <a>Imprint & Data Privacy</a>
+          <a>Impressum & Datenschutz</a>
         </Link>
       </div>
     </footer>
