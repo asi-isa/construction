@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import heroBG from "../../public/images/haus_landschaft.jpg";
 import { useEffect, useState } from "react";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { HiOutlineMail } from "react-icons/hi";
 
 export default function Hero() {
   const [visible, setVisible] = useState(false);
@@ -19,11 +21,21 @@ export default function Hero() {
           <a className={styles.info_link}>leistungen</a>
         </Link> */}
         <div className={styles.hero_info}>
-          <p className={styles.hero_info_text}>machen was hält.</p>
+          <p className={styles.hero_info_text}>Bauen für die Ewigkeit.</p>
         </div>
-        <Link href="/">
-          <a className={styles.info_link}>kontakt</a>
-        </Link>
+        <p className={styles.kontakt_info}>
+          Wir freuen uns von Ihnen zu hören.
+        </p>
+        <div className={styles.kontakt}>
+          <Link href="/contact">
+            <a className={styles.info_link}>
+              <HiOutlineMail />
+            </a>
+          </Link>
+          <div className={styles.info_link}>
+            <AiOutlinePhone />
+          </div>
+        </div>
       </article>
     </section>
   );

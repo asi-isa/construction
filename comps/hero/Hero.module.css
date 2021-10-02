@@ -13,21 +13,34 @@
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   transition: opacity 750ms ease-in-out;
+  max-width: 45vw;
 }
-.info_link:first-child {
+.kontakt_info {
+  margin-bottom: 1.5rem;
+}
+/* .info_link:first-child {
   margin-bottom: 1rem;
+} */
+.kontakt {
+  display: flex;
+  justify-content: space-around;
 }
-.info_link {
+/* .info_link {
   border: 2px solid var(--accent-color-50);
   border-radius: 0.5rem;
   padding: 0.2rem 0.5rem;
   text-align: center;
   cursor: pointer;
+} */
+.info_link {
+  cursor: pointer;
+  transform: scale(1.3);
+  color: var(--accent-color);
 }
 .info_link:hover,
 .info_link:focus,
 .info_link:active {
-  border-color: var(--accent-color);
+  transform: scale(1.2);
 }
 .hero_info {
   margin-bottom: 1rem;
