@@ -16,7 +16,7 @@ export default function AboutUs() {
       </div>
       <img src="/images/working_man.jpg" alt="ceo" className={styles.img} />
 
-      <div className={styles.flex_wrap}>
+      <div className={styles.svg_cards}>
         <SVGCard
           svg={<FaPeopleCarry />}
           subheading="Gemainsam."

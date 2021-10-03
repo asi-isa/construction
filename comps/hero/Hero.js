@@ -21,7 +21,13 @@ export default function Hero() {
   }
   return (
     <section className={styles.hero}>
-      <Image src={heroBG} layout="responsive" width={1920} height={1536} />
+      <Image
+        src={heroBG}
+        layout="responsive"
+        objectFit="cover"
+        width={1920}
+        height={1036}
+      />
       <article className={`${styles.info} ${!visible && "transparent"}`}>
         {/* <Link href="/">
           <a className={styles.info_link}>leistungen</a>
