@@ -12,9 +12,9 @@ export default function AboutUs() {
         <div className={styles.header}>
           {/* <h5 className={styles.subheading}>Über Uns</h5> */}
           <div className={styles.heading}>
-            <h2 className={styles.title}>Meine Werte.</h2>
-            <h2 className={styles.title}>Meine Überzeugungen.</h2>
-            <h2 className={styles.title}>Meine Verantwortungen.</h2>
+            <h2 className={styles.title}>Unsere Werte.</h2>
+            <h2 className={styles.title}>Unsere Überzeugungen.</h2>
+            <h2 className={styles.title}>Unsere Verantwortung.</h2>
           </div>
 
           <p className={styles.additional_content}>
