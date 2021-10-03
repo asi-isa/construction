@@ -24,7 +24,7 @@
 .heading {
   margin-bottom: 1rem;
   padding: 1rem;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid var(--accent-color);
 }
 .additional_content {
 }

@@ -9,10 +9,12 @@ export default function MyWork() {
   return (
     <section className={styles.mywork} id="mywork">
       <div className={styles.header}>
-        <h5 className={styles.subheading}>Unsere Leistungen</h5>
-        <h2 className={styles.heading}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        </h2>
+        <h2 className={styles.title}>Unsere Leistungen</h2>
+        <p className={styles.text}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis
+          deserunt hic minima cupiditate vitae, voluptatem fuga obcaecati,
+          ullam, non veritatis?
+        </p>
       </div>
 
       <div className={styles.mywork_con}>

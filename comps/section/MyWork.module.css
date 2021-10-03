@@ -1,14 +1,17 @@
 .mywork {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .header {
-  margin: 6rem auto;
+  margin: 3rem auto;
   text-align: center;
   max-width: 500px;
+  padding: 3rem;
 }
-.subheading {
-  color: var(--accent-color);
+.title {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .mywork_con {
