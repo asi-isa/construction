@@ -25,8 +25,9 @@ export default function Hero() {
         src={heroBG}
         layout="responsive"
         objectFit="cover"
+        objectPosition="center"
         width={1920}
-        height={1036}
+        height={1536}
       />
       <article className={`${styles.info} ${!visible && "transparent"}`}>
         {/* <Link href="/">

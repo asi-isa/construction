@@ -1,5 +1,7 @@
 .hero {
   position: relative;
+  max-height: 733px;
+  overflow: hidden;
 }
 
 .info {
