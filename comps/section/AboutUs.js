@@ -8,13 +8,22 @@ import { AiFillStar, AiOutlineSafety } from "react-icons/ai";
 export default function AboutUs() {
   return (
     <section className={styles.aboutus}>
-      <div className={styles.header}>
-        {/* <h5 className={styles.subheading}>Über Uns</h5> */}
-        <h2 className={styles.heading}>
-          Meine Werte. Meine Überzeugungen. Meine Verantwortungen.
-        </h2>
+      <div className={styles.resp_cont}>
+        <div className={styles.header}>
+          {/* <h5 className={styles.subheading}>Über Uns</h5> */}
+          <div className={styles.heading}>
+            <h2 className={styles.title}>Meine Werte.</h2>
+            <h2 className={styles.title}>Meine Überzeugungen.</h2>
+            <h2 className={styles.title}>Meine Verantwortungen.</h2>
+          </div>
+
+          <p className={styles.additional_content}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui modi
+            accusantium distinctio eius reprehenderit excepturi.
+          </p>
+        </div>
+        <img src="/images/working_man.jpg" alt="ceo" className={styles.img} />
       </div>
-      <img src="/images/working_man.jpg" alt="ceo" className={styles.img} />
 
       <div className={styles.svg_cards}>
         <SVGCard
