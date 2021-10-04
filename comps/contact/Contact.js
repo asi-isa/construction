@@ -17,19 +17,20 @@ export default function Contact() {
 
       <div className={styles.contact_form}>
         <div className={styles.contact_information}>
-          <h3 className={styles.contact_info_title}>
+          <h2 className={styles.contact_info_title}>
             Unsere Kontaktinformationen
-          </h3>
+          </h2>
 
           <div className={styles.contact_info_con}>
             <p className={styles.contact_info}>
-              <AiOutlinePhone /> +49 1514 24242424
+              <AiOutlinePhone className={styles.icon} /> +49 1514 24242424
             </p>
             <p className={styles.contact_info}>
-              <AiOutlineMail /> isa.tech@email.com
+              <AiOutlineMail className={styles.icon} /> isa.tech@email.com
             </p>
             <p className={styles.contact_info}>
-              <IoLocationOutline /> somestreet 42, 21212 some city
+              <IoLocationOutline className={styles.icon} /> somestreet 42, 21212
+              some city
             </p>
           </div>
 
