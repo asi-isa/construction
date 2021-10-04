@@ -49,8 +49,10 @@ export default function Contact() {
             <input
               type="text"
               id="firstName"
+              name="firstName"
               className={styles.input}
               placeholder="Vorname"
+              autoFocus
               required
             />
             <label htmlFor="lastName" className={styles.label}>
@@ -59,6 +61,7 @@ export default function Contact() {
             <input
               type="text"
               id="lastName"
+              name="lastName"
               className={styles.input}
               placeholder="Nachname"
               required
@@ -70,8 +73,9 @@ export default function Contact() {
               Email
             </label>
             <input
-              type="text"
+              type="email"
               id="mail"
+              name="mail"
               className={styles.input}
               placeholder="Email"
               required
@@ -82,6 +86,7 @@ export default function Contact() {
             <input
               type="text"
               id="phone"
+              name="phone"
               className={styles.input}
               placeholder="Telefonnummer"
               required
@@ -91,13 +96,15 @@ export default function Contact() {
           <label htmlFor="message" className={styles.label}>
             Nachricht
           </label>
-          <input
-            type="text"
+
+          <textarea
+            name="message"
             id="message"
-            className={styles.input}
+            rows="7"
+            className={`${styles.input} ${styles.textarea}`}
             placeholder="Nachricht"
             required
-          />
+          ></textarea>
 
           <button className={styles.btn}>Senden</button>
         </form>
