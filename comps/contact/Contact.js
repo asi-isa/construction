@@ -53,7 +53,6 @@ export default function Contact() {
                 name="firstName"
                 className={styles.input}
                 placeholder="Vorname"
-                autoFocus
                 required
               />
             </div>
