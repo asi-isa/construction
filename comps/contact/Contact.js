@@ -43,54 +43,62 @@ export default function Contact() {
 
         <form className={styles.form}>
           <div className={styles.col_two}>
-            <label htmlFor="firstName" className={styles.label}>
-              Vorname
-            </label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              className={styles.input}
-              placeholder="Vorname"
-              autoFocus
-              required
-            />
-            <label htmlFor="lastName" className={styles.label}>
-              Nachname
-            </label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              className={styles.input}
-              placeholder="Nachname"
-              required
-            />
+            <div className={styles.col}>
+              <label htmlFor="firstName" className={styles.label}>
+                Vorname
+              </label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                className={styles.input}
+                placeholder="Vorname"
+                autoFocus
+                required
+              />
+            </div>
+            <div className={styles.col}>
+              <label htmlFor="lastName" className={styles.label}>
+                Nachname
+              </label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                className={styles.input}
+                placeholder="Nachname"
+                required
+              />
+            </div>
           </div>
 
           <div className={styles.col_two}>
-            <label htmlFor="mail" className={styles.label}>
-              Email
-            </label>
-            <input
-              type="email"
-              id="mail"
-              name="mail"
-              className={styles.input}
-              placeholder="Email"
-              required
-            />
-            <label htmlFor="phone" className={styles.label}>
-              Telefonnummer
-            </label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              className={styles.input}
-              placeholder="Telefonnummer"
-              required
-            />
+            <div className={styles.col}>
+              <label htmlFor="mail" className={styles.label}>
+                Email
+              </label>
+              <input
+                type="email"
+                id="mail"
+                name="mail"
+                className={styles.input}
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div className={styles.col}>
+              <label htmlFor="phone" className={styles.label}>
+                Telefonnummer
+              </label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                className={styles.input}
+                placeholder="Telefonnummer"
+                required
+              />
+            </div>
           </div>
 
           <label htmlFor="message" className={styles.label}>

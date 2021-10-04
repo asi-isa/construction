@@ -31,7 +31,7 @@
   background-color: var(--accent-color);
   color: var(--white);
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .contact_info_title {
   margin-bottom: 3rem;
@@ -100,4 +100,31 @@
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  border: 2px solid var(--accent-color);
+  background-color: initial;
+  color: var(--accent-color);
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+@media (min-width: 1037px) {
+  .contact_form {
+    margin-top: 3rem;
+    flex-direction: row;
+  }
+  .contact_information {
+    margin-right: 4rem;
+  }
+  .col_two {
+    flex-direction: row;
+  }
+  .btn {
+    margin-bottom: 0;
+  }
 }

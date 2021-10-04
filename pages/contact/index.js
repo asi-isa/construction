@@ -7,7 +7,7 @@ export default function ContactPage() {
     <>
       <Header />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
