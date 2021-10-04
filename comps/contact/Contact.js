@@ -5,6 +5,17 @@ import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 // import { BsMailbox2 } from "react-icons/bs";
 
 export default function Contact() {
+  function formHandler(e) {
+    e.preventDefault();
+
+    const formData = {};
+
+    Array.from(e.currentTarget.elements).forEach((formElement) => {
+      if (formElement.value) formData[formElement.name] = formElement.value;
+    });
+
+    console.log(formData);
+  }
   return (
     <section className={styles.contact}>
       <div className={styles.header}>
@@ -41,7 +52,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={formHandler}>
           <div className={styles.col_two}>
             <div className={styles.col}>
               <label htmlFor="firstName" className={styles.label}>
