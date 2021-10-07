@@ -1,0 +1,32 @@
+.svg {
+  /* transform: scale(0.5); */
+  margin-right: auto;
+}
+
+.light_1,
+.light_2 {
+  fill: var(--accent-color-70);
+}
+.dark_1 {
+  fill: var(--black-70);
+}
+
+.light_1,
+.light_2,
+.dark_1 {
+  transition: transform 1s ease-in-out, opacity 2s ease-in-out;
+}
+.light_2 {
+  transform: translateX(-100%);
+}
+
+.move_1 {
+  transform: translateX(20%);
+}
+.move_2 {
+  transform: translateX(40%);
+  opacity: 0;
+}
+.move_3 {
+  transform: translateX(0%);
+}

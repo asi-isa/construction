@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Header.module.css";
 import Link from "next/link";
+import Logo from "../logo/Logo";
 
 export default function Header() {
   const [showHamMenu, setShowHamMenu] = useState(false);
@@ -11,7 +12,11 @@ export default function Header() {
     <>
       {showHamMenu && <div className={styles.modal}></div>}
       <header className={styles.header}>
-        <h1 className={styles.firm}>a.s.i.</h1>
+        <Link href="/">
+          <a className={styles.firma}>a.s.i.</a>
+        </Link>
+        {/* <h1 className={styles.firm}>a.s.i.</h1> */}
+        <Logo />
         <div
           className={`${styles.ham} ${showHamMenu && styles.active}`}
           onClick={toggleHamMenu}

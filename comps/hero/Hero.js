@@ -54,8 +54,8 @@ export default function Hero() {
       {showPopup && (
         <Popup
           title="Unsere Rufnummern"
-          text="06008 424242"
-          text2="+49 0154 424242"
+          text="Telefon: 06008 424242"
+          text2="Mobil: +49 0154 424242"
           closePopup={togglePopup}
         />
       )}
