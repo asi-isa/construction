@@ -3,34 +3,82 @@ import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 import Loader from "../loader/Loader";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/router";
 import Popup from "../popup/Popup";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
   const router = useRouter();
+  const recaptchaRef = useRef();
+  const formRef = useRef();
   const [sending, setSending] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [formData, setFormData] = useState({});
 
   async function formHandler(e) {
     e.preventDefault();
 
-    const formData = {};
+    // Execute the reCAPTCHA when the form is submitted
+    await recaptchaRef.current.execute();
 
-    Array.from(e.currentTarget.elements).forEach((formElement) => {
-      if (formElement.value) formData[formElement.name] = formElement.value;
+    // const formData = {};
+
+    // Array.from(e.currentTarget.elements).forEach((formElement) => {
+    //   if (formElement.value) formData[formElement.name] = formElement.value;
+    // });
+
+    // try {
+    //   setSending(true);
+    //   await fetch("/api/mail", {
+    //     method: "post",
+    //     body: JSON.stringify(formData),
+    //   });
+    //   setShowPopup(true);
+    // } catch (error) {
+    //   console.error(error);
+    // } finally {
+    //   setSending(false);
+    // }
+  }
+
+  async function onReCAPTCHAChange(captchaCode) {
+    // If the reCAPTCHA code is null or undefined indicating that
+    // the reCAPTCHA was expired then return early
+    if (!captchaCode) return;
+
+    const payload = { captcha: captchaCode };
+    const data = {};
+
+    Array.from(formRef.current.elements).forEach((field) => {
+      if (!field.value.trim()) return;
+      console.log(field.name, field.value);
+      data[field.name] = field.value;
     });
+
+    payload["formData"] = data;
 
     try {
       setSending(true);
-      await fetch("/api/mail", {
-        method: "post",
-        body: JSON.stringify(formData),
+      const response = await fetch("/api/mail", {
+        method: "POST",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+        },
       });
-      setShowPopup(true);
+      if (response.ok) {
+        setShowPopup(true);
+      } else {
+        const error = await response.json();
+        throw new Error(error.message);
+      }
     } catch (error) {
-      console.error(error);
+      alert(error?.message || "Something went wrong");
     } finally {
+      // Reset the reCAPTCHA when the request has failed or succeeeded
+      // so that it can be executed again if user submits another email.
+      recaptchaRef.current.reset();
       setSending(false);
     }
   }
@@ -72,7 +120,13 @@ export default function Contact() {
             </div>
           </div>
 
-          <form className={styles.form} onSubmit={formHandler}>
+          <form className={styles.form} onSubmit={formHandler} ref={formRef}>
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              size="invisible"
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+              onChange={onReCAPTCHAChange}
+            />
             <div className={styles.col_two}>
               <div className={styles.col}>
                 <label htmlFor="firstName" className={styles.label}>
