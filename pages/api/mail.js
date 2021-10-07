@@ -11,8 +11,8 @@ export default async function (req, res) {
   `;
 
   const msg = {
-    to: "ali.inceoglu94@gmail.com",
-    from: "info@moneyo.tech", // Use the email address or domain you verified above
+    to: process.env.EMAIL_TO,
+    from: process.env.EMAIL_FROM, // Use the email address or domain you verified above
     subject: `Req from ${body.firstName} ${body.lastName}`,
     text: message,
     html: message.replace("/\r\n/g", "<br>"),
