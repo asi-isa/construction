@@ -1,5 +1,5 @@
 .popup {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -9,7 +9,7 @@
   background-color: var(--white-90);
 }
 .modal {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: var(--black-50);
 }
@@ -20,7 +20,8 @@
 }
 .closeBTN {
   transform: scale(3.3);
-  margin-left: 2rem;
+  margin-left: auto;
+  cursor: pointer;
 }
 .text,
 .text2 {

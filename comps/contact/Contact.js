@@ -4,10 +4,12 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 import Loader from "../loader/Loader";
 import { useState } from "react";
+import Popup from "../popup/Popup";
 // import { BsMailbox2 } from "react-icons/bs";
 
 export default function Contact() {
   const [sending, setSending] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   async function formHandler(e) {
     e.preventDefault();
@@ -24,6 +26,7 @@ export default function Contact() {
         method: "post",
         body: JSON.stringify(formData),
       });
+      setShowPopup(true);
     } catch (error) {
       console.error(error);
     } finally {
@@ -146,6 +149,14 @@ export default function Contact() {
       </section>
 
       {sending && <Loader />}
+      {showPopup && (
+        <Popup
+          title="Erfolg"
+          text="Wir haben Ihre Nachricht erhalten."
+          text2="Unser Team wird sich so schnell wie möglich mit Ihnen in Verbindung setzen."
+          closePopup={() => setShowPopup(false)}
+        />
+      )}
     </>
   );
 }
