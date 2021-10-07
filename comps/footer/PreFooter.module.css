@@ -1,7 +1,7 @@
 .prefooter {
   padding: 4rem 1rem;
-  border-top: 2px solid var(--accent-color);
-  border-top-left-radius: 2rem;
+  /* border-top: 2px solid var(--accent-color); */
+  /* border-top-left-radius: 2rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;

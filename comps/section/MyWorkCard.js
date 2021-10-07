@@ -2,6 +2,7 @@ import styles from "./MyWorkCard.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
+import { MdClose } from "react-icons/md";
 
 export default function MyWorkCard({ title, img, text }) {
   const [highlight, setHighlight] = useState(false);
@@ -16,7 +17,11 @@ export default function MyWorkCard({ title, img, text }) {
       </div>
       <div className={`${styles.btn} `}>
         {!highlight && `mehr über ${title}`}
-        <BsArrowRight onClick={toggleHighlight} />
+        {!highlight ? (
+          <BsArrowRight onClick={toggleHighlight} />
+        ) : (
+          <MdClose onClick={toggleHighlight} />
+        )}
       </div>
     </article>
   );

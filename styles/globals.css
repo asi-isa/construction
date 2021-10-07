@@ -39,6 +39,7 @@ img {
   max-width: 100%;
 }
 svg {
+  cursor: pointer;
   transform: scale(1.6);
 }
 

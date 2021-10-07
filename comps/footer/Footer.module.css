@@ -8,6 +8,15 @@
   align-items: center;
   text-align: center;
   gap: 3rem;
+  position: relative;
+}
+.footer::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 2px;
+  width: 100vw;
+  background-color: var(--accent-color);
 }
 
 .isatech {
