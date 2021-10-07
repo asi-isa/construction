@@ -13,13 +13,14 @@ export default function Header() {
       {showHamMenu && <div className={styles.modal}></div>}
       <header className={styles.header}>
         <Link href="/">
-          <a className={styles.firma}>a.s.i.</a>
+          <a className={styles.firma}>i.s.a.</a>
         </Link>
         <Logo />
         <div
           className={`${styles.ham} ${showHamMenu && styles.active}`}
           onClick={toggleHamMenu}
         ></div>
+
         <nav className={`${styles.nav} ${!showHamMenu && "transparent"}`}>
           <ul className={styles.ul}>
             <li className={styles.li} onClick={toggleHamMenu}>

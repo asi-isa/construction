@@ -109,5 +109,35 @@
   background-color: var(--accent-color-50);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+  .ham {
+    display: none;
+  }
+  .nav {
+    opacity: 1;
+
+    position: initial;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+    border: none;
+    border-radius: none;
+    text-align: initial;
+    padding: 0;
+    padding-top: 0;
+    background-color: initial;
+  }
+  .nav::before {
+    display: none;
+  }
+  .ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .li {
+    margin-bottom: 0;
+  }
 }
