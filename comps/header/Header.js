@@ -15,7 +15,6 @@ export default function Header() {
         <Link href="/">
           <a className={styles.firma}>a.s.i.</a>
         </Link>
-        {/* <h1 className={styles.firm}>a.s.i.</h1> */}
         <Logo />
         <div
           className={`${styles.ham} ${showHamMenu && styles.active}`}
@@ -24,12 +23,12 @@ export default function Header() {
         <nav className={`${styles.nav} ${!showHamMenu && "transparent"}`}>
           <ul className={styles.ul}>
             <li className={styles.li} onClick={toggleHamMenu}>
-              <Link href="#my_work">
+              <Link href="/">
                 <a className={styles.link}>Leistungen</a>
               </Link>
             </li>
             <li className={styles.li} onClick={toggleHamMenu}>
-              <Link href="#about_us">
+              <Link href="/">
                 <a className={styles.link}>Über Uns</a>
               </Link>
             </li>
