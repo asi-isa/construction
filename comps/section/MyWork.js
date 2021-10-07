@@ -23,25 +23,25 @@ export default function MyWork() {
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste
         architecto perferendis sit illum odio modi ipsam itaque? Maiores, et.
         Obcaecati!"
-          title="holz"
+          title="Holz"
         />
         <MyWorkCard
           img={mywork2}
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste
         architecto!"
-          title="metall"
+          title="Metall"
         />
         <MyWorkCard
           img={mywork3}
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste
         architecto!"
-          title="konstruktion"
+          title="Konstruktion"
         />
         <MyWorkCard
           img={mywork4}
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste
         architecto!"
-          title="modern bauen"
+          title="modernes Bauen"
         />
       </div>
     </section>
