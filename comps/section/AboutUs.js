@@ -7,7 +7,7 @@ import { AiFillStar, AiOutlineSafety } from "react-icons/ai";
 
 export default function AboutUs() {
   return (
-    <section className={styles.aboutus}>
+    <section className={styles.aboutus} id="about_us">
       <div className={styles.resp_cont}>
         <div className={styles.header}>
           {/* <h5 className={styles.subheading}>Über Uns</h5> */}

@@ -23,14 +23,26 @@ export default function Header() {
         ></div>
         <nav className={`${styles.nav} ${!showHamMenu && "transparent"}`}>
           <ul className={styles.ul}>
-            <li className={styles.li}>
-              <Link href="/">
+            <li className={styles.li} onClick={toggleHamMenu}>
+              <Link href="#my_work">
                 <a className={styles.link}>Leistungen</a>
               </Link>
             </li>
-            <li className={styles.li}>Über Uns</li>
-            <li className={styles.li}>Kontakt</li>
-            <li className={styles.li}>Jobs</li>
+            <li className={styles.li} onClick={toggleHamMenu}>
+              <Link href="#about_us">
+                <a className={styles.link}>Über Uns</a>
+              </Link>
+            </li>
+            <li className={styles.li} onClick={toggleHamMenu}>
+              <Link href="/contact">
+                <a className={styles.link}>Kontakt</a>
+              </Link>
+            </li>
+            <li className={styles.li} onClick={toggleHamMenu}>
+              <Link href="/contact">
+                <a className={styles.link}>Jobs</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

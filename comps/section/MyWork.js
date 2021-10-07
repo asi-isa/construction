@@ -7,7 +7,7 @@ import mywork4 from "../../public/images/mywork4.jpg";
 
 export default function MyWork() {
   return (
-    <section className={styles.mywork} id="mywork">
+    <section className={styles.mywork} id="my_work">
       <div className={styles.header}>
         <h2 className={styles.title}>Unsere Leistungen</h2>
         <p className={styles.text}>
