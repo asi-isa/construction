@@ -4,10 +4,12 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 import Loader from "../loader/Loader";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import Popup from "../popup/Popup";
 // import { BsMailbox2 } from "react-icons/bs";
 
 export default function Contact() {
+  const router = useRouter();
   const [sending, setSending] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
@@ -154,7 +156,7 @@ export default function Contact() {
           title="Erfolg"
           text="Wir haben Ihre Nachricht erhalten."
           text2="Unser Team wird sich so schnell wie möglich mit Ihnen in Verbindung setzen."
-          closePopup={() => setShowPopup(false)}
+          closePopup={() => router.push("/")}
         />
       )}
     </>
