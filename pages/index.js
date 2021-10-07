@@ -6,6 +6,7 @@ import MyWork from "../comps/section/MyWork";
 import Footer from "../comps/footer/Footer";
 import FooterHero from "../comps/footer/FooterHero";
 import AboutUs from "../comps/section/AboutUs";
+import PreFooter from "../comps/footer/PreFooter";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
 
       <AboutUs />
 
-      <FooterHero />
+      <PreFooter />
 
       <Footer />
 

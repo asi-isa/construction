@@ -8,7 +8,7 @@ export default function Footer() {
         <p>
           &#169;2021 construction&#174; by{" "}
           <a href="https://isatech.tech" className={styles.isatech}>
-            isatech UG
+            isatech.tecg
           </a>
         </p>
         <Link href="/">

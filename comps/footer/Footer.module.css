@@ -1,7 +1,6 @@
 .footer {
   padding: 2rem 1rem;
-  background-color: black;
-  color: white;
+  border-top: 2px solid var(--accent-color);
   /* border-top-left-radius: 2rem; */
   display: flex;
   flex-direction: column;
@@ -14,4 +13,5 @@
 .isatech {
   font-weight: bold;
   text-decoration: underline;
+  color: var(--accent-color);
 }

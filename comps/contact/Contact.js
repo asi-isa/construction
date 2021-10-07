@@ -6,7 +6,6 @@ import Loader from "../loader/Loader";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Popup from "../popup/Popup";
-// import { BsMailbox2 } from "react-icons/bs";
 
 export default function Contact() {
   const router = useRouter();
@@ -153,7 +152,7 @@ export default function Contact() {
       {sending && <Loader />}
       {showPopup && (
         <Popup
-          title="Erfolg"
+          title="Vielen Dank"
           text="Wir haben Ihre Nachricht erhalten."
           text2="Unser Team wird sich so schnell wie möglich mit Ihnen in Verbindung setzen."
           closePopup={() => router.push("/")}
