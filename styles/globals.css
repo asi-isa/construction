@@ -63,6 +63,7 @@ svg {
 }
 .transparent {
   opacity: 0;
+  transform: translateY(-100vh);
 }
 .scale12 {
   transform: scale(1.2);
