@@ -10,7 +10,9 @@ export default function Header() {
   }
   return (
     <>
-      {showHamMenu && <div className={styles.modal}></div>}
+      {showHamMenu && (
+        <div className={styles.modal} onClick={toggleHamMenu}></div>
+      )}
       <header className={styles.header}>
         <Link href="/">
           <a className={styles.firma}>i.s.a.</a>
