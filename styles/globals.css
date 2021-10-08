@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,700&display=swap");
 
 :root {
-  --accent-color: #de7833;
+  --accent-color: rgba(149, 1, 1, 1);
+  --accent-color-70: rgba(149, 1, 1, 0.7);
+  --accent-color-50: rgba(149, 1, 1, 0.5);
+  --accent-color-30: rgba(149, 1, 1, 0.3);
+  /* --accent-color: #de7833;
   --accent-color-70: rgba(222, 120, 51, 0.7);
   --accent-color-50: rgba(222, 120, 51, 0.5);
-  --accent-color-30: rgba(222, 120, 51, 0.3);
+  --accent-color-30: rgba(222, 120, 51, 0.3); */
+  /* --accent-color: #ccdbd1;
+  --accent-color-70: rgba(204, 219, 209, 0.7);
+  --accent-color-50: rgba(204, 219, 209, 0.5);
+  --accent-color-30: rgba(204, 219, 209, 0.3); */
   --white: rgb(255, 255, 255);
   --white-90: rgb(255, 255, 255, 0.9);
   --white-50: rgb(255, 255, 255, 0.5);
