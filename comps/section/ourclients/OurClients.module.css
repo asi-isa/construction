@@ -1,0 +1,47 @@
+.ourclients {
+  margin: 8rem auto;
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: var(--accent-color);
+  border-radius: 0.5rem;
+  /* border-top-left-radius: 2rem; */
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.info {
+  line-height: 1.4;
+  font-size: 1.1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.client {
+  width: 33vw;
+  max-width: 155px;
+  margin: 0.3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--white-30);
+}
+.client svg {
+  transform: scale(2);
+}
+.client_logo {
+  margin-bottom: 0.5rem;
+}

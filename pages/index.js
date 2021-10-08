@@ -7,6 +7,7 @@ import Footer from "../comps/footer/Footer";
 import FooterHero from "../comps/footer/FooterHero";
 import AboutUs from "../comps/section/AboutUs";
 import PreFooter from "../comps/footer/PreFooter";
+import OurClients from "../comps/section/ourclients/OurClients";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
       <Hero />
 
       <MyWork />
+
+      <OurClients />
 
       <AboutUs />
 
