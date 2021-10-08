@@ -32,13 +32,13 @@ export default function AboutUs() {
           text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quasi corporis."
         />
         <SVGCard
-          svg={<FaEnvira />}
-          subheading="Nachhaltig."
+          svg={<AiFillStar />}
+          subheading="Premium."
           text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quasi corporis."
         />
         <SVGCard
-          svg={<AiFillStar />}
-          subheading="Perfektion."
+          svg={<FaEnvira />}
+          subheading="Nachhaltig."
           text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quasi corporis."
         />
         <SVGCard
