@@ -21,3 +21,12 @@
   justify-content: center;
   gap: 2rem;
 }
+
+@media (min-width: 1168px) {
+  .mywork {
+    margin-bottom: 12rem;
+  }
+  .header {
+    margin: 6rem auto;
+  }
+}

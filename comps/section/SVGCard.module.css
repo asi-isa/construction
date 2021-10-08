@@ -1,10 +1,26 @@
 .card {
   padding: 0.5rem;
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   width: 94vw;
   max-width: 500px;
   margin-bottom: 2rem;
+  position: relative;
+  transition: transform 450ms ease;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: var(--black-80);
+  bottom: -0.7rem;
+  left: 0;
+  right: 0;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  transform: translateY(0.1rem);
 }
 
 .svg {
