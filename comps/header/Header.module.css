@@ -23,6 +23,7 @@
   height: 0.6rem;
   margin-right: 0.4rem;
   z-index: 9999;
+  cursor: pointer;
 }
 .ham::before {
   content: "";
@@ -64,6 +65,7 @@
   border: 2px solid var(--accent-color-30);
   border-radius: 0.5rem;
   width: 94vw;
+  max-width: 733px;
   text-align: center;
   padding: 1rem;
   padding-top: 2rem;
@@ -113,7 +115,7 @@
   .header {
     padding: 1rem;
   }
-  .ham {
+  /* .ham {
     display: none;
   }
   .nav {
@@ -137,7 +139,9 @@
     display: flex;
     justify-content: space-around;
   }
+  */
   .li {
-    margin-bottom: 0;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
   }
 }

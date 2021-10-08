@@ -24,12 +24,12 @@ export default function Header() {
         <nav className={`${styles.nav} ${!showHamMenu && "transparent"}`}>
           <ul className={styles.ul}>
             <li className={styles.li} onClick={toggleHamMenu}>
-              <Link href="#my_work">
+              <Link href="/#my_work">
                 <a className={styles.link}>Leistungen</a>
               </Link>
             </li>
             <li className={styles.li} onClick={toggleHamMenu}>
-              <Link href="#about_us">
+              <Link href="/#about_us">
                 <a className={styles.link}>Über Uns</a>
               </Link>
             </li>
